@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  StyleSheet,
   View,
   Text,
   Image,
@@ -10,11 +9,13 @@ import { capitalize } from "lodash";
 import { useNavigation } from "@react-navigation/native";
 import getColorByPokemonType from "../../utils/getColorByPokemonType";
 
+import { styles } from "./styles";
+
 export default function PokemonCard(props) {
   const { pokemon } = props;
   const navigation = useNavigation();
 
-  const pokemonColor = getColorByPokemonType(pokemon.type);
+  const pokemonColor = getColorByPokemonType({ type: pokemon.type });
   const bgStyles = { backgroundColor: pokemonColor, ...styles.bgStyles };
 
   const goToPokemon = () => {
@@ -38,7 +39,7 @@ export default function PokemonCard(props) {
   );
 }
 
-const styles = StyleSheet.create({
+/* const styles = StyleSheet.create({
   card: {
     flex: 1,
     height: 130,
@@ -72,4 +73,4 @@ const styles = StyleSheet.create({
     width: 90,
     height: 90,
   },
-});
+}); */

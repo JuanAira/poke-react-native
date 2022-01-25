@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from '../../utils/constants';
 
 export const styles = StyleSheet.create({
   card: {
@@ -18,11 +19,11 @@ export const styles = StyleSheet.create({
     position: "absolute",
     right: 10,
     top: 10,
-    color: "#fff",
+    color: COLORS.WHITE,
     fontSize: 11,
   },
   name: {
-    color: "#fff",
+    color: COLORS.WHITE,
     fontWeight: "bold",
     fontSize: 15,
     paddingTop: 10,

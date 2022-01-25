@@ -21,3 +21,16 @@ export const POKEMON_TYPE_COLORS = {
   dark: "#705848",
   fairy: "#EE99AC",
 };
+
+export const DEVICE_NAME = {
+  ANDROID: 'android',
+  IOS: 'ios',
+}
+
+export const COLORS = {
+  WHITE: '#fff',
+  GRAY: '#6b6b6b',
+  LIGHT_GRAY: '#dedede',
+  RED: '#ff3e3e',
+  GREEN: '#00ac17',
+}

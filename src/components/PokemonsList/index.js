@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  FlatList,
-  ActivityIndicator,
-} from "react-native";
+import { FlatList, ActivityIndicator } from "react-native";
 import PokemonCard from '../PokemonCard';
 
 import { styles } from './styles';

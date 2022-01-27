@@ -33,9 +33,7 @@ export default function NavigationTab() {
         name="Pokedex"
         component={PokedexNavigation}
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="user" color={color} size={size} />
-          ),
+          tabBarIcon: () => Pokeball(),
         }}
       />
       <Tab.Screen

@@ -1,25 +1,23 @@
 import { StyleSheet } from "react-native";
+import { COLORS } from "../../../utils/constants";
 
 export const styles = StyleSheet.create({
-  content: {
-    marginHorizontal: 20,
-    marginTop: 20,
-  },
-  titleBlock: {
-    marginBottom: 30,
-  },
   title: {
     fontWeight: "bold",
     fontSize: 22,
+    padding: 20,
   },
   dataContent: {
     marginBottom: 20,
+    padding: 20,
   },
   itemMenu: {
     flexDirection: "row",
     paddingVertical: 20,
-    borderBottomWidth: 1,
-    borderColor: "#CFCFCF",
+    backgroundColor: COLORS.WHITE,
+    borderRadius: 30,
+    padding: 40,
+    marginTop: 20,
   },
   itemMenuTitle: {
     fontWeight: "bold",

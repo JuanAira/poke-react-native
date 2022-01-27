@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, TextInput } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import { size } from "lodash";
 import useAuth from "../../../hooks/useAuth";
 import { getPokemonsFavoriteApi } from "../../../api/favorite";
 import { styles } from "./styles";
+import CustomButton from "../LoginForm/Components/CustomButton";
 
 export default function UserData() {
   const { auth, logout } = useAuth();
@@ -30,13 +31,13 @@ export default function UserData() {
       </View>
 
       <View style={styles.dataContent}>
-        <ItemMenu title="Nombre" text={`${auth.firstName} ${auth.lastName}`} />
-        <ItemMenu title="Username" text={auth.username} />
-        <ItemMenu title="Email" text={auth.email} />
-        <ItemMenu title="Total Favoritos" text={`${total} pokemons`} />
+        <ItemMenu style={styles.itemMenu} title="Nombre" text={`${auth.firstName} ${auth.lastName}`} />
+        <ItemMenu style={styles.itemMenu} title="Username" text={auth.username} />
+        <ItemMenu style={styles.itemMenu} title="Email" text={auth.email} />
+        <ItemMenu style={styles.itemMenu} title="Total Favoritos" text={`${total} pokemons`} />
       </View>
 
-      <Button title="Desconectarse" onPress={logout} style={styles.btnLogoun} />
+      <CustomButton title="Log out" onPress={logout} />
     </View>
   );
 }

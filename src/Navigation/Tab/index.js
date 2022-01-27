@@ -11,11 +11,15 @@ import AccountNavigation from '../Stack/Account';
 //Icons
 import { Pokeball } from '../components/Icons/Pokeball';
 
+import useAuth from '../../hooks/useAuth';
+
 const Tab = createBottomTabNavigator();
 
 export default function NavigationTab() {
+  const { auth } = useAuth();
+
   return (
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName='Account'>
       <Tab.Screen
         name="Favorite"
         component={FavoriteNavigation}
@@ -29,7 +33,9 @@ export default function NavigationTab() {
         name="Pokedex"
         component={PokedexNavigation}
         options={{
-          tabBarIcon: () => Pokeball()
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="user" color={color} size={size} />
+          ),
         }}
       />
       <Tab.Screen
@@ -38,7 +44,8 @@ export default function NavigationTab() {
         options={{
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
-          )
+          ),
+          tabBarVisible: !!auth,
         }}
       />
     </Tab.Navigator>

@@ -9,7 +9,14 @@ const Stack = createStackNavigator();
 export default function AccountNavigation() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Account" component={Account} />
+      <Stack.Screen
+        name="Account"
+        component={Account}
+        options={{
+          title: "ddfdf",
+          header: () => null,
+        }}
+      />
     </Stack.Navigator>
   )
 }

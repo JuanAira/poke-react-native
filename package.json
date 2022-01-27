@@ -10,6 +10,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.17",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/bottom-tabs": "^5.x",
     "@react-navigation/drawer": "^5.x",
@@ -17,7 +18,10 @@
     "@react-navigation/stack": "^5.x",
     "eslint": "^8.7.0",
     "expo": "~44.0.0",
+    "expo-linear-gradient": "~11.0.0",
     "expo-status-bar": "~1.2.0",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -26,7 +30,9 @@
     "react-native-reanimated": "~2.3.1",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1"
+    "react-native-textinput-with-icons": "^1.0.18",
+    "react-native-web": "0.17.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

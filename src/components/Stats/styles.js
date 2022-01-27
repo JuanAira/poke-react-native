@@ -4,12 +4,12 @@ import { COLORS } from '../../utils/constants';
 export const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
-    marginTop: 40,
+    marginTop: 20,
     marginBottom: 80,
   },
   title: {
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 24,
     paddingBottom: 5,
   },
   block: {
@@ -17,30 +17,30 @@ export const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   blockTitle: {
-    width: "30%",
+    width: "35%",
   },
   statName: {
-    fontSize: 12,
+    fontSize: 14,
     color: COLORS.GRAY,
   },
   blockInfo: {
-    width: "70%",
+    width: "65%",
     flexDirection: "row",
     alignItems: "center",
   },
   number: {
-    width: "12%",
-    fontSize: 12,
+    width: "16%",
+    fontSize: 14,
   },
   bgBar: {
     backgroundColor: COLORS.LIGHT_GRAY,
-    width: "88%",
-    height: 5,
+    width: "84%",
+    height: 8,
     borderRadius: 20,
     overflow: "hidden",
   },
   bar: {
-    height: 5,
+    height: 8,
     borderRadius: 20,
   },
 });

@@ -17,7 +17,7 @@ export default function Type(props) {
             backgroundColor: getColorByPokemonType({ type: item.type.name }),
           }}
         >
-          <Text>{capitalize(item.type.name)}</Text>
+          <Text style={styles.text}>{capitalize(item.type.name)}</Text>
         </View>
       ))}
     </View>

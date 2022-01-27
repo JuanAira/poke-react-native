@@ -24,7 +24,7 @@ export default function Stats(props) {
             <Text style={styles.statName}>{capitalize(item.stat.name)}</Text>
           </View>
           <View style={styles.blockInfo}>
-            <Text style={styles.number}>{item.base_stat}</Text>
+            <Text style={styles.number}>{`${item.base_stat}%`}</Text>
             <View style={styles.bgBar}>
               <View style={[styles.bar, barStyles({ num: item.base_stat })]} />
             </View>

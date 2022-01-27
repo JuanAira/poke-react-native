@@ -32,7 +32,7 @@ export const COLORS = {
   GRAY: '#6b6b6b',
   LIGHT_GRAY: '#F1F3F8',
   RED: '#ff3e3e',
-  GREEN: '#00ac17',
+  GREEN: '#41C947',
   PRIMARY: '#8020EB',
   LIGHT_GRAY_SECONDARY: '#CBCBCB',
   LINEAR_GRADIENT_PRIMATY: '#D7B7FB',

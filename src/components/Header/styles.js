@@ -4,40 +4,33 @@ import { COLORS } from '../../utils/constants';
 export const styles = StyleSheet.create({
   bg: {
     width: "100%",
-    height: 400,
+    height: 450,
     position: "absolute",
-    borderBottomEndRadius: 300,
-    borderBottomLeftRadius: 300,
-    transform: [{ scaleX: 2 }],
+    borderBottomEndRadius: 40,
+    borderBottomLeftRadius: 40,
   },
   content: {
     marginHorizontal: 20,
-    marginTop: 30,
   },
   header: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
-    paddingTop: 40,
+    paddingTop: 15,
   },
   name: {
     color: COLORS.WHITE,
     fontWeight: "bold",
-    fontSize: 27,
-  },
-  order: {
-    color: COLORS.WHITE,
-    fontWeight: "bold",
+    fontSize: 16,
   },
   contentImg: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    top: 30,
   },
   image: {
-    width: 250,
-    height: 300,
+    width: 350,
+    height: 390,
     resizeMode: "contain",
   },
 });

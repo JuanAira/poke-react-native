@@ -4,7 +4,7 @@ import { COLORS } from '../../utils/constants';
 export const styles = StyleSheet.create({
   card: {
     flex: 1,
-    height: 130,
+    height: 220,
   },
   spacing: {
     flex: 1,
@@ -13,12 +13,12 @@ export const styles = StyleSheet.create({
   bgStyles: {
     flex: 1,
     borderRadius: 15,
-    padding: 10,
+    padding: 15,
   },
   number: {
     position: "absolute",
     right: 10,
-    top: 10,
+    top: 28,
     color: COLORS.WHITE,
     fontSize: 11,
   },
@@ -29,10 +29,7 @@ export const styles = StyleSheet.create({
     paddingTop: 10,
   },
   image: {
-    position: "absolute",
-    bottom: 2,
-    right: 2,
-    width: 90,
-    height: 90,
+    width: 150,
+    height: 150,
   },
 });

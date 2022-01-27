@@ -87,7 +87,7 @@ export const styles = StyleSheet.create({
   orConect: {
     marginHorizontal: 25,
     color: COLORS.LIGHT_GRAY_SECONDARY,
-    marginTop: 20,
+    marginTop: 38,
     fontSize: 12,
     textAlign: 'center',
   },
@@ -106,15 +106,17 @@ export const styles = StyleSheet.create({
   singUp: {
     textAlign: "center",
     color: COLORS.LIGHT_GRAY_SECONDARY,
-    marginTop: 20,
   },
   contentSingUp: {
     display: 'flex',
     flexDirection: 'row',
-    marginLeft: 80,
+    marginLeft: 85,
   },
   singUpColor: {
     color: COLORS.PRIMARY,
     marginLeft: 4,
+  },
+  image: {
+    marginTop: -3,
   }
 });

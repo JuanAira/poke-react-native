@@ -16,6 +16,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import { COLORS } from "../../../utils/constants";
 import { useNavigation } from "@react-navigation/native";
+import CustomButton from './Components/CustomButton';
 
 export default function LoginForm() {
   const { login } = useAuth();
@@ -43,7 +44,7 @@ export default function LoginForm() {
       <View style={styles.linearGradient}>
         <LinearGradient
           style={styles.linearGradient}
-          colors={['#8020EB', '#7900FF']}
+          colors={[COLORS.LINEAR_GRADIENT_PRIMATY, COLORS.LINEAR_GRADIENT_SECONDARY]}
         >
           <View style={styles.header}>
             <Image
@@ -120,14 +121,14 @@ export default function LoginForm() {
           onValueChange={() => setSwitchValue(!switchValue)}
           value={switchValue}
           trackColor={{ false: COLORS.LIGHT_GRAY_SECONDARY, true: COLORS.PRIMARY }}
-          thumbColor={switchValue ? COLORS.WHITE : COLORS.LIGHT_GRAY_SECONDARY}
+          thumbColor={COLORS.WHITE}
         />
         <Text style={styles.textSwicht}>
           Remember me
         </Text>
       </View>
 
-      <Button title="Login" onPress={formik.handleSubmit} />
+      <CustomButton title="Login" onPress={formik.handleSubmit} />
 
       <Text style={styles.orConect}>
         _____________ OR CONNECT WITH _____________
@@ -135,11 +136,9 @@ export default function LoginForm() {
 
       <View style={styles.container}>
         <View style={styles.sectionTexIconBotton}>
-          <Icon
-            name="google"
-            color="#000"
-            size={14}
-            style={styles.icon}
+          <Image
+            source={require('../../../assets/google.png')}
+            style={styles.image}
           />
           <TextInput
             placeholder='Facebook'
@@ -149,14 +148,12 @@ export default function LoginForm() {
         </View>
 
         <View style={styles.sectionTexIconBotton}>
-          <Icon
-            name="facebook-square"
-            color="#000"
-            size={14}
-            style={styles.icon}
+          <Image
+            source={require('../../../assets/facebook.png')}
+            style={styles.image}
           />
           <TextInput
-            placeholder='Username'
+            placeholder='Facebook'
             style={styles.input}
             autoCapitalize="none"
           />
@@ -171,6 +168,9 @@ export default function LoginForm() {
           Sign up
         </Text>
       </View>
+      
+
+
     </View>
   );
 }

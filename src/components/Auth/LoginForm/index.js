@@ -66,7 +66,7 @@ export default function LoginForm() {
         <View style={styles.sectionTexIcon}>
           <Icon
             name="user"
-            color="#000"
+            color={COLORS.BLACK}
             size={14}
             style={styles.icon}
           />
@@ -83,7 +83,7 @@ export default function LoginForm() {
         <View style={styles.sectionTexIcon}>
           <Icon
             name="lock"
-            color="#000"
+            color={COLORS.BLACK}
             size={14}
             style={styles.icon}
           />
@@ -99,7 +99,7 @@ export default function LoginForm() {
           {passwordLock ?
             <Icon
               name="eye-slash"
-              color="#000"
+              color={COLORS.BLACK}
               size={14}
               onPress={() => setPasswordLock(!passwordLock)}
               style={styles.icon}
@@ -107,7 +107,7 @@ export default function LoginForm() {
             :
             <Icon
               name="eye"
-              color="#000"
+              color={COLORS.BLACK}
               size={14}
               onPress={() => setPasswordLock(!passwordLock)}
               style={styles.icon}
